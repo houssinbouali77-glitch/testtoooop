@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami's Premier Roofing Specialists | ProRoof Miami</title>
+    <meta name="description" content="Connect with certified roofing experts in Miami, Florida. Premium repairs, leak detection, and full replacements. Professional service for Miami homeowners.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #f59e0b;
+            --accent-hover: #d97706;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        h1, h2, h3, .font-outfit {
+            font-family: 'Outfit', sans-serif;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button-main {
+            background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+            transition: all 0.3s ease;
+        }
+        .cta-button-main:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(234, 88, 12, 0.4);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.05), transparent),
+                        radial-gradient(circle at bottom left, rgba(245, 158, 11, 0.05), transparent);
+        }
+        .floating-anim {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 selection:bg-amber-100 overflow-x-hidden">
+
+    <!-- TOP BAR -->
+    <div class="bg-slate-900 text-white py-2.5 px-4 text-center text-xs font-bold uppercase tracking-[0.2em]">
+        <span class="inline-flex items-center">
+            <span class="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>
+            Miami's Most Trusted Roofing Network — Licensed & Insured
+        </span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-slate-900 p-2.5 rounded-xl shadow-lg">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-amber-500"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-extrabold tracking-tight text-slate-900 leading-none">ProRoof</span>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest mt-1">Miami Florida</span>
+                    </div>
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-10 text-sm font-bold text-slate-600">
+                    <a href="#services" class="hover:text-slate-900 transition-colors relative group">
+                        Services
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#how-it-works" class="hover:text-slate-900 transition-colors relative group">
+                        How It Works
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#reviews" class="hover:text-slate-900 transition-colors relative group">
+                        Reviews
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-500 transition-all group-hover:w-full"></span>
+                    </a>
+                </nav>
+
+                <div class="flex items-center space-x-6">
+                    <div id="status-indicator" class="hidden sm:block">
+                        <!-- Dynamic Status -->
+                    </div>
+                    <a href="tel:+18882176251" class="flex items-center space-x-2 bg-slate-900 text-white px-5 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition-all shadow-lg">
+                        <i data-lucide="phone" class="w-4 h-4 text-amber-500"></i>
+                        <span>(888) 217-6251</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative hero-gradient pt-16 pb-24 lg:pt-32 lg:pb-40 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-12 gap-16 items-center">
+                    <div class="lg:col-span-7">
+                        <div class="inline-flex items-center space-x-3 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-black uppercase tracking-widest mb-8">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-amber-600"></i>
+                            <span>Miami Dade County Authorized</span>
+                        </div>
+                        <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.05] mb-8">
+                            Premium Roofing <br/>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">Excellence</span> in Miami
+                        </h1>
+                        <p class="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed font-medium">
+                            Protecting Miami homes with superior craftsmanship. From emergency leak repairs to full architectural roof replacements, we connect you with the city's finest certified specialists.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                            <a href="tel:+18882176251" class="cta-button-main flex items-center justify-center space-x-4 w-full sm:w-auto px-10 py-6 text-white rounded-2xl text-2xl font-black shadow-2xl">
+                                <i data-lucide="phone-call" class="w-8 h-8"></i>
+                                <span>(888) 217-6251</span>
+                            </a>
+                            <div class="flex items-center space-x-4">
+                                <div class="flex -space-x-3">
+                                    <img src="https://i.pravatar.cc/100?u=1" class="w-12 h-12 rounded-full border-4 border-white shadow-sm" alt="User">
+                                    <img src="https://i.pravatar.cc/100?u=2" class="w-12 h-12 rounded-full border-4 border-white shadow-sm" alt="User">
+                                    <img src="https://i.pravatar.cc/100?u=3" class="w-12 h-12 rounded-full border-4 border-white shadow-sm" alt="User">
+                                </div>
+                                <div class="text-sm">
+                                    <p class="font-black text-slate-900">4.9/5 Rating</p>
+                                    <p class="text-slate-500 font-bold">1,200+ Miami Jobs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative z-10 floating-anim">
+                            <div class="rounded-[2.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25)] border-[12px] border-white">
+                                <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=800" alt="Modern Miami Roof" class="w-full h-[500px] object-cover">
+                            </div>
+                            <!-- Floating Badge -->
+                            <div class="absolute -right-8 top-1/2 -translate-y-1/2 bg-white p-6 rounded-3xl shadow-2xl border border-slate-50 max-w-[180px]">
+                                <div class="bg-amber-100 w-12 h-12 rounded-2xl flex items-center justify-center mb-4">
+                                    <i data-lucide="award" class="w-6 h-6 text-amber-600"></i>
+                                </div>
+                                <p class="text-sm font-black text-slate-900 leading-tight">Voted #1 Roofing Referral in Miami</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES WE PROVIDE -->
+        <section id="services" class="py-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-2xl">
+                        <h2 class="text-sm font-black text-amber-600 uppercase tracking-[0.3em] mb-4">Our Expertise</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">Services We Provide</h3>
+                    </div>
+                    <p class="text-slate-500 font-bold text-lg max-w-sm">
+                        Professional roofing solutions engineered for Florida's unique tropical climate.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Service 1: Inspection -->
+                    <div class="service-card group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="images/6.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Roof Inspection">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                        <div class="p-8">
+                            <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 -mt-16 relative z-10 shadow-xl border-4 border-white">
+                                <i data-lucide="search" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-900 mb-4">Roof Inspection & Assessment</h4>
+                            <p class="text-slate-600 leading-relaxed font-medium">Our specialists perform thorough multi-point inspections and detailed assessments to identify hidden structural issues and storm damage.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Installation -->
+                    <div class="service-card group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="images/4.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Roof Installation">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                        <div class="p-8">
+                            <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 -mt-16 relative z-10 shadow-xl border-4 border-white">
+                                <i data-lucide="hammer" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-900 mb-4">Installation & Replacement</h4>
+                            <p class="text-slate-600 leading-relaxed font-medium">Expert full roof installations and complete replacements using premium materials and expert craftsmanship for durable, long-lasting results.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Repair -->
+                    <div class="service-card group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="images/2.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Roof Repair">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                        <div class="p-8">
+                            <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 -mt-16 relative z-10 shadow-xl border-4 border-white">
+                                <i data-lucide="wrench" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-900 mb-4">Repair & Maintenance</h4>
+                            <p class="text-slate-600 leading-relaxed font-medium">From minor leaks to regular maintenance, we provide comprehensive solutions to keep your roof in top condition and safeguard your property.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Shingle -->
+                    <div class="service-card group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="images/3.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Shingle Roof">
+                        </div>
+                        <div class="p-8">
+                            <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 -mt-16 relative z-10 shadow-xl border-4 border-white">
+                                <i data-lucide="layers" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-900 mb-4">Shingle Roofing</h4>
+                            <p class="text-slate-600 leading-relaxed font-medium">Reliable shingle roof services including thorough inspections and effective solutions tailored to your specific roofing needs and aesthetic preferences.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Tile Roofing -->
+                    <div class="service-card group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="images/5.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Tile Roof">
+                        </div>
+                        <div class="p-8">
+                            <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 -mt-16 relative z-10 shadow-xl border-4 border-white">
+                                <i data-lucide="layout-grid" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-900 mb-4">Tile Roofing</h4>
+                            <p class="text-slate-600 leading-relaxed font-medium">Expert installation and repair for tile roofs, ensuring the longevity, durability, and Mediterranean beauty of your home's exterior.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Metal Roofing -->
+                    <div class="service-card group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="images/1.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Metal Roof">
+                        </div>
+                        <div class="p-8">
+                            <div class="w-14 h-14 bg-slate-900 rounded-2xl flex items-center justify-center mb-6 -mt-16 relative z-10 shadow-xl border-4 border-white">
+                                <i data-lucide="shield" class="w-6 h-6 text-amber-500"></i>
+                            </div>
+                            <h4 class="text-2xl font-black text-slate-900 mb-4">Metal Roofing</h4>
+                            <p class="text-slate-600 leading-relaxed font-medium">Durable and modern metal roofing solutions designed to withstand extreme weather while providing a sleek, contemporary look for your Miami home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="how-it-works" class="py-32 bg-slate-900 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-24">
+                    <h2 class="text-sm font-black text-amber-500 uppercase tracking-[0.4em] mb-6">The Process</h2>
+                    <h3 class="text-4xl md:text-6xl font-extrabold mb-8">Simple 3-Step Connection</h3>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-12 relative">
+                    <!-- Connector Line -->
+                    <div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-slate-700 to-transparent -translate-y-1/2"></div>
+                    
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 rounded-[2rem] bg-slate-800 border-2 border-slate-700 flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:border-amber-400 transition-all duration-500 group-hover:rotate-12">
+                            <i data-lucide="phone-outgoing" class="w-10 h-10 text-amber-500 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4">1. Call the Hotline</h4>
+                        <p class="text-slate-400 font-medium leading-relaxed">Tap our verified Miami tracking number to connect instantly with a specialist.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 rounded-[2rem] bg-slate-800 border-2 border-slate-700 flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:border-amber-400 transition-all duration-500 group-hover:rotate-12">
+                            <i data-lucide="message-square" class="w-10 h-10 text-amber-500 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4">2. Professional Consult</h4>
+                        <p class="text-slate-400 font-medium leading-relaxed">Discuss your roofing needs and receive a detailed, no-obligation estimate.</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 rounded-[2rem] bg-slate-800 border-2 border-slate-700 flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:border-amber-400 transition-all duration-500 group-hover:rotate-12">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-amber-500 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="text-2xl font-black mb-4">3. Expert Execution</h4>
+                        <p class="text-slate-400 font-medium leading-relaxed">Schedule your service and have Miami's best technicians handle the job perfectly.</p>
+                    </div>
+                </div>
+
+                <div class="mt-24 text-center">
+                    <a href="tel:+18882176251" class="inline-flex items-center space-x-4 bg-white text-slate-900 px-12 py-6 rounded-2xl text-2xl font-black hover:bg-amber-500 hover:text-white transition-all shadow-2xl">
+                        <i data-lucide="phone-call" class="w-8 h-8"></i>
+                        <span>Call (888) 217-6251 Now</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section id="reviews" class="py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col items-center text-center mb-20">
+                    <h2 class="text-sm font-black text-amber-600 uppercase tracking-[0.4em] mb-6">Testimonials</h2>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900">What Miami Homeowners Say</h3>
+                </div>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative">
+                        <i data-lucide="quote" class="w-12 h-12 text-amber-200 absolute top-8 right-8"></i>
+                        <div class="flex text-amber-500 mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 italic mb-8 font-medium text-lg leading-relaxed">"The rapid response in Coral Gables was impressive. They tarped our roof during a storm and returned to fix it permanently the next day. Truly professional."</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200"></div>
+                            <div>
+                                <p class="font-black text-slate-900">Sarah Jenkins</p>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Coral Gables, FL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative">
+                        <i data-lucide="quote" class="w-12 h-12 text-amber-200 absolute top-8 right-8"></i>
+                        <div class="flex text-amber-500 mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 italic mb-8 font-medium text-lg leading-relaxed">"Replaced our entire roof in Miami Beach. The crew was exceptionally clean and the project manager kept us updated daily. 5-star service!"</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200"></div>
+                            <div>
+                                <p class="font-black text-slate-900">Robert Vance</p>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Miami Beach, FL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 relative">
+                        <i data-lucide="quote" class="w-12 h-12 text-amber-200 absolute top-8 right-8"></i>
+                        <div class="flex text-amber-500 mb-6">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                        <p class="text-slate-600 italic mb-8 font-medium text-lg leading-relaxed">"Finding a reliable roofer in Kendall is tough. These guys made it easy. No hidden costs, just honest, high-quality work. Highly recommended."</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-200"></div>
+                            <div>
+                                <p class="font-black text-slate-900">Elena Rodriguez</p>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Kendall, FL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CALL TO ACTION -->
+        <section class="py-24 bg-slate-900 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&q=80&w=1200" alt="Roof Background" class="w-full h-full object-cover">
+            </div>
+            <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-10 leading-tight">Ready to Protect Your <br/><span class="text-amber-500">Miami Home?</span></h2>
+                <p class="text-xl text-slate-300 mb-12 font-medium">Specialists are standing by to provide a professional assessment. Call the hotline now to secure your property.</p>
+                <div class="flex flex-col items-center">
+                    <a href="tel:+18882176251" class="cta-button-main flex items-center justify-center space-x-6 px-14 py-8 text-white rounded-[2rem] text-3xl font-black shadow-[0_30px_60px_-15px_rgba(234,88,12,0.5)]">
+                        <i data-lucide="phone-call" class="w-12 h-12"></i>
+                        <span>(888) 217-6251</span>
+                    </a>
+                    <p class="mt-8 text-slate-400 font-bold uppercase tracking-[0.2em] text-sm">Professional Consultation Provided</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-24 px-4 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-4 gap-16 mb-20 border-b border-slate-900 pb-20">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-8">
+                        <div class="bg-slate-900 p-2 rounded-xl border border-slate-800">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-amber-500"></i>
+                        </div>
+                        <span class="text-2xl font-black text-white">ProRoof Miami</span>
+                    </div>
+                    <p class="text-lg leading-relaxed max-w-md font-medium">
+                        Miami's premier referral network connecting homeowners with elite, licensed roofing professionals. Excellence in every shingle.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest mb-8 text-sm">Quick Navigation</h4>
+                    <ul class="space-y-4 font-bold">
+                        <li><a href="#services" class="hover:text-amber-500 transition-colors">Expert Services</a></li>
+                        <li><a href="#how-it-works" class="hover:text-amber-500 transition-colors">Our Process</a></li>
+                        <li><a href="#reviews" class="hover:text-amber-500 transition-colors">Local Reviews</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-black uppercase tracking-widest mb-8 text-sm">Legal</h4>
+                    <ul class="space-y-4 font-bold">
+                        <li><a href="javascript:void(0)" onclick="toggleModal('privacy-modal')" class="hover:text-amber-500 transition-colors">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" onclick="toggleModal('terms-modal')" class="hover:text-amber-500 transition-colors">Terms of Service</a></li>
+                        <li><a href="javascript:void(0)" onclick="toggleModal('contact-modal')" class="hover:text-amber-500 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-sm font-bold uppercase tracking-widest">
+                <p>© 2024 ProRoof Miami. All rights reserved.</p>
+                <p class="flex items-center">
+                    <i data-lucide="shield-check" class="w-4 h-4 mr-2 text-amber-500"></i>
+                    Verified Miami Contractor Network
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL CONTAINER -->
+    <div id="modal-container" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" onclick="closeAllModals()"></div>
+        <div class="absolute inset-4 md:inset-20 bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col">
+            <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-slate-900 p-2 rounded-xl">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-amber-500"></i>
+                    </div>
+                    <span class="text-xl font-black text-slate-900">ProRoof Miami</span>
+                </div>
+                <button onclick="closeAllModals()" class="p-2 hover:bg-slate-200 rounded-full transition-colors">
+                    <i data-lucide="x" class="w-6 h-6 text-slate-500"></i>
+                </button>
+            </div>
+            <div class="flex-1 overflow-y-auto p-12">
+                <!-- Privacy Modal -->
+                <div id="privacy-modal" class="hidden prose prose-slate max-w-none">
+                    <h2 class="text-4xl font-black mb-8">Privacy Policy</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">At ProRoof Miami, we take your privacy seriously. This policy describes how we collect, use, and protect your personal information when you use our referral services.</p>
+                    <h3 class="text-2xl font-black mb-4">Information We Collect</h3>
+                    <p class="text-slate-600 mb-6">We collect information you provide directly to us, such as when you call our hotline or request a consultation. This may include your name, phone number, and property address.</p>
+                </div>
+                <!-- Terms Modal -->
+                <div id="terms-modal" class="hidden prose prose-slate max-w-none">
+                    <h2 class="text-4xl font-black mb-8">Terms of Service</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">By using ProRoof Miami, you agree to our terms of service. We are a referral network connecting homeowners with independent roofing contractors.</p>
+                </div>
+                <!-- Contact Modal -->
+                <div id="contact-modal" class="hidden prose prose-slate max-w-none">
+                    <h2 class="text-4xl font-black mb-8">Contact Us</h2>
+                    <p class="text-xl font-bold text-slate-900 mb-8">Need immediate assistance? Call our 24/7 hotline:</p>
+                    <a href="tel:+18882176251" class="inline-flex items-center space-x-4 bg-slate-900 text-white px-10 py-6 rounded-2xl text-2xl font-black shadow-xl">
+                        <i data-lucide="phone-call" class="w-8 h-8 text-amber-500"></i>
+                        <span>(888) 217-6251</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Dynamic Business Status (Miami Time)
+        function updateStatus() {
+            const statusDiv = document.getElementById('status-indicator');
+            const now = new Date();
+            const estTime = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+            const day = estTime.getDay();
+            const hour = estTime.getHours();
+
+            let isOpen = false;
+            if (day >= 1 && day <= 5) { // Mon-Fri
+                if (hour >= 8 && hour < 23) isOpen = true; 
+            } else { // Sat-Sun
+                if (hour >= 9 && hour < 21) isOpen = true;
+            }
+
+            if (isOpen) {
+                statusDiv.innerHTML = `
+                    <div class="flex items-center bg-green-50 px-4 py-2 rounded-full border border-green-100">
+                        <span class="relative flex h-2 w-2 mr-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        </span>
+                        <span class="text-[10px] font-black text-green-700 uppercase tracking-widest">Live: Specialists Online</span>
+                    </div>
+                `;
+            } else {
+                statusDiv.innerHTML = `
+                    <div class="flex items-center bg-slate-100 px-4 py-2 rounded-full border border-slate-200">
+                        <span class="h-2 w-2 rounded-full bg-slate-400 mr-3"></span>
+                        <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest">Closed: Recording Live</span>
+                    </div>
+                `;
+            }
+        }
+
+        updateStatus();
+        setInterval(updateStatus, 60000);
+
+        // Modal Logic
+        function toggleModal(modalId) {
+            const container = document.getElementById('modal-container');
+            const modals = ['privacy-modal', 'terms-modal', 'contact-modal'];
+            container.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            modals.forEach(id => {
+                const el = document.getElementById(id);
+                if (id === modalId) el.classList.remove('hidden');
+                else el.classList.add('hidden');
+            });
+        }
+
+        function closeAllModals() {
+            document.getElementById('modal-container').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeAllModals();
+        });
+    </script>
+</body>
+</html>
